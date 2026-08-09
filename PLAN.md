@@ -37,6 +37,16 @@
 
 ---
 
+## Day 0 — 上游研究(已完成)
+
+- [x] 精读论文 arXiv:2601.18225(环境构建 / reward 公式 / 评测 / RL 探索结论)
+- [x] 调研官方仓库(API 协议 / 动作格式 / get_score 指标 / 无训练代码的事实)
+- [x] 调研参考项目(Action Guard / 工具化动作 / AgentLoop / Reward v3 / 动态采样)
+- [x] 明确本仓库继承关系与自研范围
+- 📄 产出:[docs/research/day0-upstream-research.md](docs/research/day0-upstream-research.md)
+- 🔑 指导后续的关键结论:① SFT+RL 优于单独 RL;② strict reward 作 RL 目标优于 loose;
+      ③ 单轮优先;④ badcase 重点盯 attribute/option 两维
+
 ## Day 1 — 仓库地基 + 环境闭环(无 GPU)
 
 - [x] 建仓,导入内嵌 ShopSimulator v2.1 环境 + 数据 + SFT 轨迹 + 冻结 200 题(注明来源)

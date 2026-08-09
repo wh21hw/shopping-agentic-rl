@@ -27,6 +27,7 @@ shop-agent-rl/
 │   ├── grpo/                     # GRPO 训练/验证任务(jsonl + parquet)
 │   └── evaluation/               # 冻结的 200 道留出评测任务
 ├── docs/
+│   ├── research/                 # Day 0 上游研究(论文精读 + 两仓库调研 + 继承关系)
 │   └── reference/                # 参考设计文档(Reward v3 / SFT / GRPO / 评测,注明出处)
 └── rl_train/                     # 本项目自研代码(环境封装 / Reward / AgentLoop / 评测)
     ├── configs/                  # 训练与评测配置
