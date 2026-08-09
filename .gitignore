@@ -1,7 +1,8 @@
-# 模型与训练产物
+# 模型与训练产物(models/ 目录本身保留,仅 README 入库,权重文件不入库)
 checkpoints/
 outputs/
-models/
+models/*
+!models/README.md
 *.ckpt
 *.safetensors
 *.bin

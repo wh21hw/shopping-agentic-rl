@@ -4,7 +4,8 @@
 Shopping Agent 后训练系统:**LoRA SFT 冷启动 → veRL 在线 GRPO → 冻结 Benchmark 评测 →
 Badcase 驱动的算法改进(DAPO)**。
 
-> 开发计划与进度见 [PLAN.md](PLAN.md);内嵌资产出处见 [docs/reference/ATTRIBUTION.md](docs/reference/ATTRIBUTION.md)。
+> 开发计划与进度见 [PLAN.md](PLAN.md);数据与权重的来源见 [docs/DATA-PROVENANCE.md](docs/DATA-PROVENANCE.md);
+> 内嵌资产出处见 [docs/reference/ATTRIBUTION.md](docs/reference/ATTRIBUTION.md)。
 
 ## 目标
 
@@ -26,7 +27,9 @@ shop-agent-rl/
 │   ├── sft/                      # 379 条训练 + 49 条验证教师轨迹(action-only)
 │   ├── grpo/                     # GRPO 训练/验证任务(jsonl + parquet)
 │   └── evaluation/               # 冻结的 200 道留出评测任务
+├── models/                       # 模型权重存放处(仅 README 入库,权重不进 git)
 ├── docs/
+│   ├── DATA-PROVENANCE.md        # 数据集/权重溯源与完整性校验
 │   ├── research/                 # Day 0 上游研究(论文精读 + 两仓库调研 + 继承关系)
 │   └── reference/                # 参考设计文档(Reward v3 / SFT / GRPO / 评测,注明出处)
 └── rl_train/                     # 本项目自研代码(环境封装 / Reward / AgentLoop / 评测)
