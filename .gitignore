@@ -1,0 +1,38 @@
+# 模型与训练产物
+checkpoints/
+outputs/
+models/
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+
+# 日志与监控
+logs/
+wandb/
+swanlab/
+runs/
+*.log
+
+# 缓存与中间产物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.cache/
+venv/
+.venv/
+
+# 解压后的商品数据(由 fine_items_eval_train_all.json.gz 生成,可重建)
+environments/ShopSimulator/shop_env/data/fine_items_eval_train_all.json
+
+# 搜索索引(可重建)
+environments/ShopSimulator/**/index/
+
+# 系统文件
+.DS_Store
+Thumbs.db
